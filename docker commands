@@ -1,0 +1,39 @@
+Dockerfile -> Image -> Container
+
+list containers :
+docker ps
+
+list all containers - running and exited :
+docker ps -a
+
+stop containers :
+docker stop container-name
+
+remove stopped container :
+docker rm continer-name
+
+list images :
+docker images
+
+remove images (To remove image, stopp all containers running on that image) :
+docker rmi image-name
+
+download image :
+docker pull image-name
+
+start/run container :
+docker run image-name
+
+append a command and start/run a container :
+docker run image-name command-here
+ex :
+docker run Ubuntu sleep 10
+
+execute command on already running container :
+docker exec container-name command-here
+ex:
+docker exec silly_sammot sleep 100
+
+command line arguments/options:
+-d : Detached mode, give back the terminal
+-it : Interactive mode
