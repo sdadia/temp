@@ -52,7 +52,7 @@ docker run image-name:tag-here
 ex :
 docker run Ubuntu:18.04
 
-find internal IP of container:
+find internal IP of container (check Networks -> Bridge -> IP address) :
 docker inspect container-name
 
 command line arguments/options:
