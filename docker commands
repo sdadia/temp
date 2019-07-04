@@ -15,7 +15,7 @@ docker rm continer-name
 list images :
 docker images
 
-remove images (To remove image, stopp all containers running on that image) :
+remove images (To remove image, stop all containers running on that image) :
 docker rmi image-name
 
 download image :
@@ -34,6 +34,17 @@ docker exec container-name command-here
 ex:
 docker exec silly_sammot sleep 100
 
+attach running container to foreground :
+docker attach container-name
+
+port mapping :
+docker run -p HOST:CONTAINER container-name
+ex :
+docker run -p 80:5000 nginx
+
 command line arguments/options:
 -d : Detached mode, give back the terminal
 -it : Interactive mode
+-i : listens to command line input from user
+-p : port mappin HOST:CONTAINER
+
