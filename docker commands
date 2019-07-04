@@ -42,9 +42,23 @@ docker run -p HOST:CONTAINER container-name
 ex :
 docker run -p 80:5000 nginx
 
+volume mapping :
+docker run -v HOST:CONTAINER container-name
+ex :
+docker run -v /host/Documents:/var/lib/mysql mysql
+
+run container with specific tag (If no tag is specified, then tag is assumed to be 'latest') :
+docker run image-name:tag-here
+ex :
+docker run Ubuntu:18.04
+
+find internal IP of container:
+docker inspect container-name
+
 command line arguments/options:
 -d : Detached mode, give back the terminal
 -it : Interactive mode
 -i : listens to command line input from user
--p : port mappin HOST:CONTAINER
+-p : port mapping HOST:CONTAINER
+-v : volume mapping HOST:CONTAINER
 
