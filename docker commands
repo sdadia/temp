@@ -55,8 +55,8 @@ docker run Ubuntu:18.04
 find internal IP of container (check Networks -> Bridge -> IP address) :
 docker inspect container-name
 
-create image from Dockefile:
-docker build Dockerfile-name -t tag-name
+create image from Dockefile, tag name is the name of the image you want to create:
+docker build Dockerfile-name [-t tag-name] 
 
 command line arguments/options:
 -d : Detached mode, give back the terminal
@@ -65,3 +65,6 @@ command line arguments/options:
 -p : port mapping HOST:CONTAINER
 -v : volume mapping HOST:CONTAINER
 -t : tag name for creating a container
+
+Dockerfile specific stuff:
+ENTRYPOINT : Specifies the command which need to run when the image is run as a container
