@@ -75,5 +75,9 @@ command line arguments/options:
 -t : tag name for creating a container
 
 Dockerfile specific stuff:
-ENTRYPOINT : Specifies the command which need to run when the image is run as a container
+ENTRYPOINT : Specifies the command (not arguments/parameter) which need to run when the image is run as a container
 COPY : Copies file from host to Docker, COPY HOST_FILE_LOCATION:DOCKER_FILE_LOCATION
+CMD : Runs specific commands after the container starts, CMD command param1 param2
+  ex: CMD 
+INCASE OF CMD, THE COMMANDS PASSED AS ARGUMENTS WHILE RUNNING THE CONTAINER ARE REPLACED COMPLETELY
+IN CASE OF ENTRYPOINT, THE ARGUMENTS PASSED TO THE 
