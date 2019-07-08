@@ -58,6 +58,9 @@ docker inspect container-name
 create image from Dockefile, tag name is the name of the image you want to create:
 docker build Dockerfile-name [-t tag-name] 
 
+login to Docker before you can push to the online Repo, they will ask for username and password:
+docker login 
+
 push docker image to Repo:
 docker push image-name-here
 ex:
@@ -73,3 +76,4 @@ command line arguments/options:
 
 Dockerfile specific stuff:
 ENTRYPOINT : Specifies the command which need to run when the image is run as a container
+COPY : Copies file from host to Docker, COPY HOST_FILE_LOCATION:DOCKER_FILE_LOCATION
