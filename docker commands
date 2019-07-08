@@ -58,6 +58,11 @@ docker inspect container-name
 create image from Dockefile, tag name is the name of the image you want to create:
 docker build Dockerfile-name [-t tag-name] 
 
+push docker image to Repo:
+docker push image-name-here
+ex:
+docker push mumshad/simple_web_app
+
 command line arguments/options:
 -d : Detached mode, give back the terminal
 -it : Interactive mode
